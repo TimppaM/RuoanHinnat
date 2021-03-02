@@ -35,7 +35,6 @@ if (!empty($_POST['tuotenimi']))
 	
 	$json = json_decode($str_new, true);
 	
-
 // Haetaan json-arraysta rivi "hinta", jotta voidaan myöhemmin lajitella tuotteet hinnan mukaan.                                                                                                                                                           
 foreach ($json["entries"] as $key => $row)
 {
@@ -60,9 +59,11 @@ foreach($json["entries"] as $data) {
    $itemid = $itemid + 1;
    echo "<div class='myDiv'>";
    echo "<font size='5vh' color='orange'>". $data["name"] ."</font>" . "<b><font size='5vh'></br>" . $data["price"] . "€</b> </font><font size='2vh'>" . $data["comp_price"] . "€ /kg </font>";
+   
+   // Käytetään tuotteen EAN-koodia myöhemmin, jotta saadaan tuotteelle oikea kuva dynaamisesti.
    $kuva = $data["ean"];
    echo "<br>";
-   // Haetaan foodie.fi sivustolta tuotteen oikea kuva tuotteen EAN-koodilla.
+   // Haetaan foodie.fi-sivuston käyttämästä pilvestä tuotteen oikea kuva tuotteen EAN-koodilla.
    echo "</br><img src=https://cdn.s-cloud.fi/v1/h80w80/product/ean/$kuva". "_kuva1.jpg>";
    echo "<br>";
   //echo"<form method='post'>
