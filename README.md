@@ -1,6 +1,6 @@
 # RuoanHinnatPHPParse
 
-Parsetetaan hakuehtojen mukaiset ruoan hinnat foodie.fi-sivustoa hyödyntäen.
+Parsetetaan hakuehtojen mukaiset tuotteen / tuotteiden hinnat foodie.fi-sivustoa hyödyntäen.
 Reaaliaikaiset ruoan hinnat (S-ryhmä).
 
 Kyseisellä koodilla saadaan palautettua:
