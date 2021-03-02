@@ -1,6 +1,6 @@
 # RuoanHinnat
 
-Haetaan hakuehtojen mukaiset tuotteen / tuotteiden hinnat foodie.fi-sivustoa hyödyntäen.
+Haetaan hakuehtojen mukaiset tuotteen / tuotteiden hinnat ja muut tiedot foodie.fi-sivustoa hyödyntäen.
 Reaaliaikaiset ruoan hinnat (S-ryhmä).
 
 - Frontend: HTML, JavaScript, JQuery, Ajax
