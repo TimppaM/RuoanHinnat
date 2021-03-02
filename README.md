@@ -3,8 +3,8 @@
 Haetaan hakuehtojen mukaiset tuotteen / tuotteiden hinnat foodie.fi-sivustoa hyödyntäen.
 Reaaliaikaiset ruoan hinnat (S-ryhmä).
 
-Frontend: JavaScript, JQuery, Ajax
-Backend: PHP
+- Frontend: JavaScript, JQuery, Ajax
+- Backend: PHP
 
 Kyseisellä koodilla saadaan palautettua:
   - Tuotteen tiedot kuten nimi, hinta, kilohinta, EAN-koodi jne.
