@@ -1,6 +1,6 @@
-# RuoanHinnatPHPParse
+# RuoanHinnatPHP
 
-Parsetetaan hakuehtojen mukaiset tuotteen / tuotteiden hinnat foodie.fi-sivustoa hyödyntäen.
+Haetaan hakuehtojen mukaiset tuotteen / tuotteiden hinnat foodie.fi-sivustoa hyödyntäen.
 Reaaliaikaiset ruoan hinnat (S-ryhmä).
 
 Kyseisellä koodilla saadaan palautettua:
