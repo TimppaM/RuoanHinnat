@@ -4,13 +4,13 @@
 // Timo Mykkänen 2021
 // PHP Backend
 header('Access-Control-Allow-Origin: *');
-header('Content-type: application/json');
+header('Content-type: application/json; charset=UTF-8');
 
 
 if (!empty($_GET['tuotenimi']))
  {
     // Korvataan välilyönnit %20, jotta haku toimii oikein.
-    $noSpacestuotenimi = str_replace(' ', '%20', $_GET['tuotenimi']);
+    $noSpacestuotenimi = str_replace(' ', '%20', urlencode($_GET['tuotenimi']));
     $data = file_get_contents("https://www.foodie.fi/products/search2?term=".$noSpacestuotenimi);
 
     // Foodie.fi-sivustolta parsetetaan json-dataa, jossa on ylempää hakuehtoa vastaavat tulokset.
