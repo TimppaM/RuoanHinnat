@@ -9,9 +9,9 @@ header('Content-type: application/json; charset=UTF-8');
 
 if (!empty($_GET['tuotenimi']))
  {
-    // Korvataan välilyönnit %20, jotta haku toimii oikein.
-    $noSpacestuotenimi = str_replace(' ', '%20', urlencode($_GET['tuotenimi']));
-    $data = file_get_contents("https://www.foodie.fi/products/search2?term=".$noSpacestuotenimi);
+    // Poistetaan välilyönnit ja encodataan ääkköset, jotta haku toimii oikein.
+    $tuotenimi = urlencode($_GET['tuotenimi']);
+    $data = file_get_contents("https://www.foodie.fi/products/search2?term=".$tuotenimi);
 
     // Foodie.fi-sivustolta parsetetaan json-dataa, jossa on ylempää hakuehtoa vastaavat tulokset.
     // Pitää hiukan manuaalisesti muokkailla ja trimmata palautuvaa objectia, jotta saadaan data oikeanlaiseen JSON-muotoon.
