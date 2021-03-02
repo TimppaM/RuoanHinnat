@@ -42,14 +42,10 @@ foreach ($json["entries"] as $key => $row)
     $tuotteenhinta[$key]  = $row['price'];
 }    
 
-// Palautetaan hakua vastaavat tulokset, jos niitä löytyi ja lajitellaan hinnan mukaan pienimmästä suurimpaan.
+// Palautetaan hakua vastaavat tulokset, jos niitä löytyi enemmän kuin yksi ja lajitellaan hinnan mukaan pienimmästä suurimpaan.
 if(count($json["entries"]) > 1)
 {
 array_multisort($tuotteenhinta, SORT_ASC, $json["entries"]);
-}
-else
-{
-echo "0 osumaa";
 }
 
 
