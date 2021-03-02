@@ -3,7 +3,7 @@
 Haetaan hakuehtojen mukaiset tuotteen / tuotteiden hinnat foodie.fi-sivustoa hyödyntäen.
 Reaaliaikaiset ruoan hinnat (S-ryhmä).
 
-- Frontend: JavaScript, JQuery, Ajax
+- Frontend: HTML, JavaScript, JQuery, Ajax
 - Backend: PHP
 
 Kyseisellä koodilla saadaan palautettua:
