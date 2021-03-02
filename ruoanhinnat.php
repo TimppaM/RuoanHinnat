@@ -47,6 +47,11 @@ if(count($json["entries"]) > 1)
 {
 array_multisort($tuotteenhinta, SORT_ASC, $json["entries"]);
 }
+// Jos hakuehdoilla ei löytynyt yhtään tuotteita.
+else if(count($json["entries"]) <= 0)
+{
+  echo "Hakuehdoilla ei löytynyt tuotteita.";
+}
 
 
 // JSON-arraysta saadaan jokaisen tuotteen tiedot loopissa ja luodaan jokaiselle tuotteelle oma html-elementti, jossa tuotteen tiedot.
